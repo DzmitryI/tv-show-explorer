@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <title>TV Show Explorer</title>
-  <path d="M22 6 32 16 42 6" fill="none" stroke="#aa3bff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="5" y="16" width="54" height="40" rx="9" fill="#aa3bff"/>
-  <rect x="11" y="22" width="42" height="28" rx="5" fill="#16171d"/>
-  <path d="M28 29v14l12-7z" fill="#fff"/>
-</svg>

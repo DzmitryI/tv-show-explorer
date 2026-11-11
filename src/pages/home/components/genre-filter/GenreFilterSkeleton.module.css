@@ -1,0 +1,27 @@
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  height: 32px;
+  max-width: 100%;
+  background: var(--code-bg);
+  border-radius: 999px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip {
+    animation: none;
+  }
+}

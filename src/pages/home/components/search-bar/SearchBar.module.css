@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  gap: 8px;
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.input:focus {
+  outline: 2px solid var(--accent-border);
+  border-color: var(--accent);
+}
+
+.button {
+  padding: 10px 20px;
+  font: inherit;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--accent-border);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

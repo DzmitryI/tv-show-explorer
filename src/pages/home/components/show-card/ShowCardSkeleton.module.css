@@ -1,0 +1,51 @@
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.card {
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.poster,
+.title,
+.meta {
+  background: var(--code-bg);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.poster {
+  aspect-ratio: 2 / 3;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.title {
+  height: 20px;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.meta {
+  height: 14px;
+  width: 40%;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster,
+  .title,
+  .meta {
+    animation: none;
+  }
+}
